@@ -1,0 +1,27 @@
+{
+  "name": "coreproc/laravel-minio-media-library-provider",
+  "type": "library",
+  "license": "MIT",
+  "autoload": {
+    "psr-4": {
+      "Coreproc\\LaravelMinioMediaLibraryProvider\\": "src/"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Coreproc\\LaravelMinioMediaLibraryProvider\\MinioServiceProvider"
+      ]
+    }
+  },
+  "authors": [
+    {
+      "name": "Chris Bautista"
+    }
+  ],
+  "minimum-stability": "dev",
+  "require": {
+    "league/flysystem-aws-s3-v3": "^3.0",
+    "spatie/laravel-medialibrary": "^10.0"
+  }
+}
